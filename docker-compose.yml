@@ -1,0 +1,11 @@
+services:
+  database:
+    image: nouchka/sqlite3  # Usamos una imagen ligera de SQLite
+    container_name: sqlite_database
+    volumes:
+      - ./database/data:/data                     # Persistencia del archivo SQLite
+      - ./database/ddl:/scripts/ddl               # Scripts de DDL disponibles en el contenedor
+      - ./database/dql:/scripts/dql               # Scripts de DQL disponibles en el contenedor
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql # Script de inicialización
+    entrypoint: ["sqlite3", "/data/database.sqlite"]
+    command: ".read /docker-entrypoint-initdb.d/init.sql"

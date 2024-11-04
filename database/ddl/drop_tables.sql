@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS Participante_Evento;
+DROP TABLE IF EXISTS Eventos;
+DROP TABLE IF EXISTS Participantes;
+DROP TABLE IF EXISTS Ubicaciones;
