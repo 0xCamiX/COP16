@@ -244,6 +244,6 @@ $RECYCLE.BIN/
 
 # Database SQL
 
-data
+# data - remove this line if you dont want to track your data files
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,python,database
