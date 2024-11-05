@@ -1,4 +1,15 @@
-DROP TABLE IF EXISTS Participante_Evento;
-DROP TABLE IF EXISTS Eventos;
-DROP TABLE IF EXISTS Participantes;
-DROP TABLE IF EXISTS Ubicaciones;
+DROP TABLE IF EXISTS Event_Participant;
+
+DROP TABLE IF EXISTS Events;
+
+DROP TABLE IF EXISTS Participants;
+
+DROP TABLE IF EXISTS Specie_Location;
+
+DROP TABLE IF EXISTS Species;
+
+DROP TABLE IF EXISTS Categories;
+
+DROP TABLE IF EXISTS Event_Locations;
+
+DROP TABLE IF EXISTS Species_Locations;
